@@ -1,0 +1,40 @@
+\documentclass[12pt,a4paper]{report}
+\input{library}
+%Header
+\fancyhead{} % clear all header fields
+\fancyhead[L]{
+ \begin{tabular}{rl}
+    \begin{picture}(25,15)(0,0)
+    \put(0,-8){\includegraphics[width=12mm, height=12mm]{pictures/hcmut.png}}
+    %\put(0,-8){\epsfig{width=10mm,figure=hcmut.eps}}
+   \end{picture}&
+	%\includegraphics[width=8mm, height=8mm]{hcmut.png} & %
+	\begin{tabular}{l}
+		\textbf{\bf \ttfamily Trường Đại Học Bách Khoa - ĐHQG TP.Hồ Chí Minh}\\
+		\textbf{\bf \ttfamily Khoa Cơ Khí - Bộ môn Cơ điện tử}
+	\end{tabular} 	
+ \end{tabular}
+}
+\fancyhead[R]{
+	{\tiny \bf \quad} % Khoảng trắng nhỏ trong header bên phải
+}
+
+%Footer
+\fancyfoot{} % clear all footer fields
+\fancyfoot[L]{\scriptsize \ttfamily Động lực học và điều khiển}
+\fancyfoot[R]{\scriptsize \ttfamily Trang {\thepage}/9}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+\renewcommand{\thesection}{\arabic{section}}
+\begin{document}
+    \include{titlepage}
+    \include{thanks.tex}
+    \tableofcontents
+    \cleardoublepage 
+    \include{2luudo.tex}
+    \include{3mophong.tex}
+    \include{1linhkien.tex}
+    \include{4sodonguyenly.tex}
+    \include{5thuchien.tex}
+    \include{6ketluan.tex}
+\end{document}
